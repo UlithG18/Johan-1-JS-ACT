@@ -3,9 +3,8 @@ console.log("Welcome to the Lab")
 
 const name = prompt("Enter your name")
 let age = Number(prompt("Enter your age"))
-const email = prompt
-
-
+const email = prompt("Enter your email")
+let status = prompt
 
 
 
