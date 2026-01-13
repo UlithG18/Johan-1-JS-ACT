@@ -7,7 +7,7 @@ function main() {
 
     const logValidation = logIn(password);
 
-    if (logValidation = false) {
+    if (logValidation === false) {
         alert("You're out the Lab");
         return;
     }
@@ -15,7 +15,7 @@ function main() {
         const name = prompt("Enter your name");
 
         let age = Number(prompt("Enter your age"));
-        if (validateAge(age) = false) {
+        if (validateAge(age) === false) {
             return;
         }
 
@@ -52,7 +52,7 @@ function validateInteger(message, min = null, max = null) {
 };
 
 function validateAge(age) {
-    if (Number.isInteger(age) = false || age <= 0 || age > 100) {
+    if (Number.isInteger(age) === false || age <= 0 || age > 100) {
         alert("Enter a correct age");
         return false;
     }
@@ -78,8 +78,8 @@ function validateStatus(status) {
 }
 
 function showUserData(name, age, email, status) {
-    console.log(`Name: ${name} \nAge: ${age} \nEmail: ${email}, \nStatus: ${status}`);
-    alert(`Name: ${name} \nAge: ${age} \nEmail: ${email} \nStatus: ${status}`);
+    alert(`Name: ${name} -> ${typeof name} \nAge: ${age} -> ${typeof age} \nEmail: ${email} -> ${typeof email} \nStatus: ${status} -> ${typeof status}`);
+    console.log(`Name: ${name} -> ${typeof name} \nAge: ${age} -> ${typeof age} \nEmail: ${email} -> ${typeof email} \nStatus: ${status} -> ${typeof status}`);
 };
 
 function logIn(password) {
